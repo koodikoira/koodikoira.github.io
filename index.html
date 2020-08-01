@@ -13050,6 +13050,11 @@ div#notebook {
     page-break-inside: avoid; 
   }
 }
+
+ul, li{
+	text-align: center;
+	list-style-type:none;
+}
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
@@ -13081,8 +13086,8 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><!--<div class="prompt input_prompt"></div>-->
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h1 style="text-align: center;">Simo's site</h1>
 <img src="https://raw.githubusercontent.com/koodikoira/testdata/master/TheDogHimself.gif" alt="The Dog himself" style="width:250px;height:250px; border-radius: 50%;"></p>
@@ -13110,15 +13115,21 @@ div#notebook {
 </tr>
 </tbody>
 </table>
-<h3 style="text-align: center;"> I'll add something <i>fun</i> in here whenever I have the time to do so</h3>
+<h3 style="text-align: center;">Blogposts</h3>
+
+<ul class="blogposts">
+
+  <li><a href="https://koodikoira.github.io/blog1_NLP_primer">NLP primer</a></li>
+  
+</ul>
+
+
 </div>
 </div>
 </div>
     </div>
   </div>
 </body>
-
- 
 
 
 </html>
