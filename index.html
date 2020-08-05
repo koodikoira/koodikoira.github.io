@@ -13080,9 +13080,26 @@ ul, li{
             linebreaks: { automatic: true }
         }
     });
+    var sound = document.getElementById("myAudio"); 
+    var image = document.getElementById("dog");
+    var delayInMilliseconds = 500;
+    function playAudio() { 
+	  sound.play();   
+	  image.width = "270";
+	  setTimeout(function() {
+	    image.width = "250";
+	    sound.currentTime = 0
+	    sound.pause()
+	  }, delayInMilliseconds);
+	}
     </script>
-    <!-- End of mathjax configuration --></head>
+    <!-- End of mathjax configuration -->
+
+</head>
 <body>
+<audio id="myAudio">
+<source src="http://soundbible.com/mp3/Dog Woof-SoundBible.com-457935112.mp3" type="audio/mpeg">
+</audio>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -13090,8 +13107,11 @@ ul, li{
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h1 style="text-align: center;">Simo's site</h1>
-<img src="https://raw.githubusercontent.com/koodikoira/testdata/master/TheDogHimself.gif" alt="The Dog himself" style="width:250px;height:250px; border-radius: 50%;"></p>
-<p style="text-align: center;">This is the main hub and index to other pages related to my hobbies and interests. You can find links to related sites in the table below.</p><table>
+<img id="dog" onclick="playAudio()" src="https://raw.githubusercontent.com/koodikoira/testdata/master/TheDogHimself.gif" alt="The Dog himself" width="250" height="250" style="border-radius: 50%;"></p>
+<p style="text-align: center;">This is the main hub and index to other pages related to my hobbies and interests.</p>
+<p style="text-align: center;">You can find links to related sites in the table below.</p>
+<p style="text-align: center;">Also I have shared some blogposts about my .</p>
+<table>
 <thead><tr>
 <th><big>Website index</big></th>
 </tr>
