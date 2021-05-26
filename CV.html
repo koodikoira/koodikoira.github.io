@@ -10692,7 +10692,7 @@ ul.typeahead-list  > li > a.pull-right {
 body {
    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b0/Lake_Kukkia_-_Just_Before_Sunrise_%2836084755811%29.jpg");
   background-position: 100% 100%;
-	background-position: top; 
+  background-position: top; 
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   background-attachment: fixed;
@@ -10717,52 +10717,88 @@ div#notebook {
     display: block;
     page-break-inside: avoid; 
   }
-}	
+} 
 
 
 td, th {
-	border: 1px solid #cccccc;
-	padding: 4 px;
+  border: 1px solid #cccccc;
+  padding: 4 px;
 }
 
 th {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 tr:nth-child(odd) {background-color: #f2f2f2;}
 
 tr:hover {
-	background-color: blue;
-	color: white;
+  background-color: blue;
+  color: white;
 }
 .doi {
-	color: red;
+  color: red;
 }
 .doi:hover {
-	color: white;
+  color: white;
 }
 
 #HASH {
-	margin-left: 50px;
-	margin-right: 50px;
-	display: flex;
-	justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 li.sub1 {
-	margin-left: 25px;
+  margin-left: 25px;
 }
 li.sub2 {
-	margin-left: 50px;
+  margin-left: 50px;
 }
 
-.column {
+.column1 {
   float: left;
   width: 50%;
   padding: 5px;
   background-color: #f9f9f9;
   border-style: outset;
-  min-height: 330px;
+  min-height: 300px;
+  padding-bottom: 15px;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border-style: outset;
+  min-height: 340px;
+  padding-bottom: 15px;
+}
+
+.column3 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border-style: outset;
+  min-height: 370px;
+  padding-bottom: 15px;
+}
+
+.column1:hover {
+  transition: 0.3s;
+  background-color: #f3f3f3;
+}
+
+.column2:hover {
+  transition: 0.3s;
+  background-color: #f3f3f3;
+}
+
+.column3:hover {
+  transition: 0.3s;
+  background-color: #FFFFFF;
 }
 
 .recommendations {
@@ -10774,6 +10810,10 @@ li.sub2 {
   min-height: 200px;
 }
 
+.recommendations:hover {
+  transition: 0.3s;
+  background-color: #f3f3f3;
+}
 
 .plotti {
   margin-left: 40px;
@@ -10786,22 +10826,22 @@ li.sub2 {
 }
 
 .row {
-	margin-left: 25px;
-	margin-right: 25px;
-	padding: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 15px;
 }
 
 .link {
-	padding: 15px;
-	display: inline-block;
-	width: 35%;
-	overflow-wrap break-word;
-	background-color: #f9f9f9;
-	border-style: outset;
-	font-family: sans-serif;
-	letter-spacing: 0.1em;
-	transition: 0.3s;
-	transform: scale(0.75, 0.75);
+  padding: 15px;
+  display: inline-block;
+  width: 35%;
+  overflow-wrap break-word;
+  background-color: #f9f9f9;
+  border-style: outset;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+  transform: scale(0.75, 0.75);
 }
 .link:hover{
   transition: 0.3s;
@@ -10810,14 +10850,14 @@ li.sub2 {
 }
 
 .row::after {
-	content: "";
-	clear: both;
-	display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 .mie {
     border: 5px solid #aad;
-	border-radius: 50%;
-	transition: 5s;
+  border-radius: 50%;
+  transition: 5s;
 }
 
 .mie:hover {
@@ -10839,30 +10879,30 @@ li.sub2 {
   100% { transform: translate(0px, 0px) rotate(0deg); }
 }
 .pipetti {
-	position: relative;
-	left: 10%;
-	bottom: 35px;
-	width: 15%;
-	transition: 1.5s;
+  position: relative;
+  left: 10%;
+  bottom: 35px;
+  width: 15%;
+  transition: 1.5s;
 }
 .pipetti:hover {
-	transition: 1s;
-	transform: rotate(50deg);
+  transition: 1s;
+  transform: rotate(50deg);
 }
 #cells{
-	position: relative;
-	width: 20%;
-	left: 20%;
-	top: -40px;
+  position: relative;
+  width: 20%;
+  left: 20%;
+  top: -40px;
 }
 
 .logo {
-	width: 150px;
-	height: auto;
+  width: 150px;
+  height: auto;
   object-fit: scale-down;
 }
 .bPoints{
-	padding: 15px;
+  padding: 15px;
 
 }
 
@@ -10878,7 +10918,7 @@ li.sub2 {
   transform: scale(1.2);
 }
 #tooltip{
-	position: relative;
+  position: relative;
   display: inline-block;
 }
 .tooltiptext {
@@ -10901,6 +10941,31 @@ li.sub2 {
   visibility: visible;
 }
 
+h3 {
+  text-indent: 15px; 
+}
+
+.vitae {
+  text-transform: uppercase;
+  background: linear-gradient(to right,#000000 10%, #AFAFFF 30%, #000000 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2.5s linear infinite;
+  display: inline-block;
+}
+
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
 
 </style>
 
@@ -10928,78 +10993,79 @@ li.sub2 {
         }
     });
     </script>
-	
-	<script>
-	let sortDirection = false;
-	let workData = [
-		{place: '<img class="logo" src="https://ita-suomenbiopankki.fi/wp-content/themes/biopankki/img/biopankki-logo-x2.png">', occupation: 'Research assistant', date: '1.5.2019 – 31.8.2020', order: 9},
-		{place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg">', occupation: 'Research apprentice', date: '15.5. – 5.10.2018', order: 8},
-		{place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg">', occupation: 'Part time lab teacher', date: '3.2 – 12.2.2018', order: 7},
-		{place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg">', occupation: 'Part time lab teacher', date: '12.10. – 20.10.2017', order: 6},
-		{place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Sealing machine operator', date: '29.5. – 18.8.2017', order: 5},
-		{place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Packaging and processing', date: '12.7. – 26.8.2016', order: 4},
-		{place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Packaging and processing', date: '28.5. – 30.9.2015', order: 3},
-		{place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Assembler', date: '1.05. – 31.8.2013', order: 2},
-		{place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Packaging', date: '19.6. – 27.7.2012', order: 1}
-	];
-	
-	window.onload  = () => {
-		loadTableData(workData);
-		};
-	
-	function loadTableData(workData) {
-		const tableBody = document.getElementById('tableData');
-		let dataHtml = '';
-		
-		for(let work of workData) {
-			dataHtml += `<tr><td style="text-align:left" id="tooltip">${work.occupation}<span class="tooltiptext">${work.place}</span></td><td style="text-align:right">${work.date}</td></tr>`;
-		}
-		console.log(dataHtml)
-		
-		tableBody.innerHTML = dataHtml;
-	}
-	
-	function sortColumn(columnName) {
-		const dataType = typeof workData[0][columnName];
-		sortDirection = !sortDirection;
-		
-		switch(dataType){
-			case 'number':
-			sortNumberColumn(sortDirection, columnName);
-			break;
-		}
-		
-		loadTableData(workData);
-		console.log(workData)
-	}
-	
-	function sortNumberColumn(sort, columnName) {
-		workData = workData.sort((d1, d2) => {
-		return sort ? d1[columnName] - d2[columnName] : d2[columnName] - d1[columnName]
-		});
-	}
+  
+  <script>
+  let sortDirection = false;
+  let workData = [
+    {place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg">', occupation: 'Data analyst', date: '1.5.2021-', order: 10},
+    {place: '<img class="logo" src="https://ita-suomenbiopankki.fi/wp-content/themes/biopankki/img/biopankki-logo-x2.png">', occupation: 'Research assistant', date: '1.5.2019 – 31.8.2020', order: 9},
+    {place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg">', occupation: 'Research apprentice', date: '15.5. – 5.10.2018', order: 8},
+    {place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg">', occupation: 'Part time lab teacher', date: '3.2 – 12.2.2018', order: 7},
+    {place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg">', occupation: 'Part time lab teacher', date: '12.10. – 20.10.2017', order: 6},
+    {place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Sealing machine operator', date: '29.5. – 18.8.2017', order: 5},
+    {place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Packaging and processing', date: '12.7. – 26.8.2016', order: 4},
+    {place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Packaging and processing', date: '28.5. – 30.9.2015', order: 3},
+    {place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Assembler', date: '1.05. – 31.8.2013', order: 2},
+    {place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Packaging', date: '19.6. – 27.7.2012', order: 1}
+  ];
+  
+  window.onload  = () => {
+    loadTableData(workData);
+    };
+  
+  function loadTableData(workData) {
+    const tableBody = document.getElementById('tableData');
+    let dataHtml = '';
+    
+    for(let work of workData) {
+      dataHtml += `<tr><td style="text-align:left" id="tooltip">${work.occupation}<span class="tooltiptext">${work.place}</span></td><td style="text-align:right">${work.date}</td></tr>`;
+    }
+    console.log(dataHtml)
+    
+    tableBody.innerHTML = dataHtml;
+  }
+  
+  function sortColumn(columnName) {
+    const dataType = typeof workData[0][columnName];
+    sortDirection = !sortDirection;
+    
+    switch(dataType){
+      case 'number':
+      sortNumberColumn(sortDirection, columnName);
+      break;
+    }
+    
+    loadTableData(workData);
+    console.log(workData)
+  }
+  
+  function sortNumberColumn(sort, columnName) {
+    workData = workData.sort((d1, d2) => {
+    return sort ? d1[columnName] - d2[columnName] : d2[columnName] - d1[columnName]
+    });
+  }
 
-	var data = [{
-	  type: 'bar',
-	  x: [1, 2, 2, 3, 3, 4, 5, 5],
-	  y: ['JavaScript ', 'C# ', 'CSS ','Bash ', 'ACS ', 'R ','SQL ', 'Python '],
-	  orientation: 'h'
-	}];
-	
-	var layout = {
-	  title: 'My IT-skills',
-	  paper_bgcolor: 'rgba(245,246,249,1)',
-	  plot_bgcolor: 'rgba(245,246,249,1)',
-	  showlegend: false,
-	  xaxis: {
-		nticks: 6,
-		ticktext:['Beginner','Novice','Intermediate','Competent','Professional'],
-		tickvals:[1, 2, 3, 4, 5]
+  var data = [{
+    type: 'bar',
+    x: [1, 2, 2, 3, 3, 4, 5, 5],
+    y: ['JavaScript ', 'C# ', 'CSS ','Bash ', 'ACS ', 'R ','SQL ', 'Python '],
+    orientation: 'h'
+  }];
+  
+  var layout = {
+    title: 'My IT-skills',
+    paper_bgcolor: 'rgba(245,246,249,1)',
+    plot_bgcolor: 'rgba(245,246,249,1)',
+    showlegend: false,
+    xaxis: {
+    nticks: 6,
+    ticktext:['Beginner','Novice','Intermediate','Competent','Professional'],
+    tickvals:[1, 2, 3, 4, 5]
   }};
  
   function outOfMedium() {
-	  document.getElementById("cells").src = "https://ya-webdesign.com/transparent250_/cell-clipart-cell-culture-4.png";
-	  document.getElementById("cells").title = "We are hungry, again!";
+    document.getElementById("cells").src = "https://ya-webdesign.com/transparent250_/cell-clipart-cell-culture-4.png";
+    document.getElementById("cells").title = "We are hungry, again!";
 };
 
 function sleep(ms) {
@@ -11008,9 +11074,9 @@ function sleep(ms) {
 
  async function changeImg() {
     document.getElementById("cells").src = "https://ya-webdesign.com/transparent250_/cell-clipart-cell-culture-2.png";
-	document.getElementById("cells").title = "Refreshing! Remember to check Simo's LinkedIn!";
-	await sleep(10000);
-	outOfMedium();
+  document.getElementById("cells").title = "Refreshing! Remember to check Simo's LinkedIn!";
+  await sleep(10000);
+  outOfMedium();
 };
 
 </script>
@@ -11025,133 +11091,134 @@ function sleep(ms) {
 
 </div>
 
-	<div class="inner_cell">
-	<div class="creationDate" style="text-align: right; color:Gray"> 31.8.2020 </div>
-		<div class="text_cell_render border-box-sizing rendered_html">
-			<div id="HASH" class="blue-msg">
-				<span id="time-HASH" class="smalltext"><h2>Simo Ryhänen</h2></span>
-				<span class="ios-circle"><h2>CURRICULUM VITAE</h2></span>
-			</div><hr>
-			
-			<br>
-			<div class = "row"> 
-				<div class = "column">
-				<h3>Bio</h3>
-					<p style="text-align:justify; margin-left:15px; margin-right:15px;">I'm a 5th year student of biomedical sciences with extending experience in industrial labour, wet lab work, and project development.</p> 
-					<p style="text-align:justify; margin-left:15px; margin-right:15px;">I've worked at research group studying molecular genetics of Alzheimer's disease at <a href="https://www3.uef.fi/en/web/biomedicine/mikko-hiltunen-group">Hiltunen research group</a>. Lately, I've been working at Biobank of Eastern Finland <a href="https://ita-suomenbiopankki.fi/ajankohtaista/paiva-tutkimusapulaisena-ita-suomen-biopankin-itssa/">developing solutions for natural language processing</a>. In my past and current jobs, I've gathered experience both in independent and collaborative work.</p>
-					<p style="text-align:justify; margin-left:15px; margin-right:15px;">I have been described as a hard working and conscientious person, who is willing to take on any task with an assertive manner.</p>
-				</div>
-				<div class="column" style="text-align:center">
-					<div>
-						<img title="Check out my LinkedIn!" class="mie" src='https://raw.githubusercontent.com/koodikoira/koodikoira.github.io/master/P%C3%A4rst%C3%A4.jpg' width=30% height=30%>
-					</div>
-					<br>
-					<div><p class="popout" style="text-align:center"><b><big>Contact me at: ryhanensimo@gmail.com</big></b></p></div>
-					<div class="link">
-						<a href="https://fi.linkedin.com/in/simo-ryh%C3%A4nen-409a3113a"><b><big>My LinkedIn</big></b></a>
-					</div>
-				</div>
-			</div>
-			
-			<div class = "row"> 
-				<div class = "column">
-					<h3>Skills</h3>
-					<div class="bPoints">
-						<ul>
-						  <li class="up">Laboratory work</li>
-						  <li class="sub1">Immunoassays</li>
-						  <li class="sub2">Western blot</li>
-						  <li class="sub2">Immunocytochemistry</li>
-						  <li class="sub1">Virology</li>
-						  <li class="sub2">Transduction</li>
-						  <li class="sub2">Flow cytometry</li>
-						  <li class="sub1">Chromatography</li>
-						  <li class="sub2">High-performance liquid chromatography</li>
-						  <li class="sub2">gel-filtration chromatography</li>
-						  <li class="up">Worked in multinational working environments</li>
-						  <li class="up">Fluent in verbal and written English</li>
-						</ul>
-					</div>
-				</div>
-				<div class = "column">
-					<h3>Hobbies</h3>
-					<div class="bPoints">
-						<ul>
-						  <li class="up">Powerlifting</li>
-						  <li class="sub1">Coaching</li>
-						  <li class="up">Weightlifting</li>
-						  <li class="up">Wall climbing & Rock climbing</li>
-						  <li class="up">Tabletop tennis</li>
-						  <li class="up">Game design</li>
-						  <li class="sub1">Mapping & scripting</li>
-						  <li class="up">History</li>
-						  <li class="up">Programming</li>
-						  <li class="sub1">Visualizing epidemiological data</li>
-						</ul>
-					</div>
-				</div>	
-			</div>
-				
-			<div class = "row"> 
-				<div class = "column"> 
-				<h3>Job history<small>   Hover over to see where I used to work</small></h3>
+  <div class="inner_cell">
+  <div class="creationDate" style="text-align: right; color:Gray"> 26.5.2021 </div>
+    <div class="text_cell_render border-box-sizing rendered_html">
+      <div id="HASH" class="blue-msg">
+        <span id="time-HASH" class="smalltext"><h2>Simo Ryhänen</h2></span>
+        <span class="ios-circle"><h2 class="vitae">CURRICULUM VITAE</h2></span>
+      </div><hr>
+      
+      <br>
+      <div class = "row"> 
+        <div class = "column1">
+        <h3 class="header">Bio</h3>
+        <p style="text-align:justify; margin-left:15px; margin-right:15px;">I'm a MSc in biomedicine with extensive experience in data analysis, coding, wet lab work, and project development.</p> 
+          <p style="text-align:justify; margin-left:15px; margin-right:15px;">I've worked at research group studying molecular genetics of Alzheimer's disease at <a href="https://www3.uef.fi/en/web/biomedicine/mikko-hiltunen-group">Hiltunen research group</a>. I've also had work experience at Biobank of Eastern Finland <a href="https://ita-suomenbiopankki.fi/ajankohtaista/paiva-tutkimusapulaisena-ita-suomen-biopankin-itssa/">developing solutions for natural language processing</a>.
+          Currently, I'm working as a data analyst in <a href="https://www.uef.fi/fi/artikkeli/pohjois-savon-ai-hub-hanke-kehittaa-tekoalypohjaisia-ratkaisuja-sote-tiedon-kasittelyyn-ja">AI Hub project</a>.</p>
+          <p style="text-align:justify; margin-left:15px; margin-right:15px;">In my past and current jobs, I've gathered experience both in independent and collaborative work. I'm described as a hard working, helpful, and conscientious person, who is willing to take on any task with an assertive manner.</p>
+          </div>
+        <div class="column1" style="text-align:center">
+          <div>
+            <img title="Check out my LinkedIn!" class="mie" src='https://raw.githubusercontent.com/koodikoira/koodikoira.github.io/master/P%C3%A4rst%C3%A4.jpg' width=30% height=30%>
+          </div>
+          <br>
+          <div><p class="popout" style="text-align:center"><b><big>Contact me at: ryhanensimo@gmail.com</big></b></p></div>
+          <div class="link">
+            <a href="https://fi.linkedin.com/in/simo-ryh%C3%A4nen-409a3113a"><b><big>My LinkedIn</big></b></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class = "row"> 
+        <div class = "column2">
+          <h3>Skills</h3>
+          <div class="bPoints">
+            <ul>
+              <li class="up">Laboratory work</li>
+              <li class="sub1">Immunoassays</li>
+              <li class="sub2">Western blot</li>
+              <li class="sub2">Immunocytochemistry</li>
+              <li class="sub1">Virology</li>
+              <li class="sub2">Transduction</li>
+              <li class="sub2">Flow cytometry</li>
+              <li class="sub1">Chromatography</li>
+              <li class="sub2">High-performance liquid chromatography</li>
+              <li class="sub2">gel-filtration chromatography</li>
+              <li class="up">Worked in multinational working environments</li>
+              <li class="up">Fluent in verbal and written English</li>
+            </ul>
+          </div>
+        </div>
+        <div class = "column2">
+          <h3>Hobbies</h3>
+          <div class="bPoints">
+            <ul>
+              <li class="up">Powerlifting</li>
+              <li class="sub1">Coaching</li>
+              <li class="up">Weightlifting</li>
+              <li class="up">Wall climbing & Rock climbing</li>
+              <li class="up">Tabletop tennis</li>
+              <li class="up">Game design</li>
+              <li class="sub1">Mapping & scripting</li>
+              <li class="up">History</li>
+              <li class="up">Programming</li>
+              <li class="sub1">Visualizing epidemiological data</li>
+            </ul>
+          </div>
+        </div>  
+      </div>
+        
+      <div class = "row"> 
+        <div class = "column3"> 
+        <h3>Job history<small>   Hover over to see where I used to work</small></h3>
 
-				
-				<table style="float: center;">
-						<thead>
-							<tr>
-								<th style="text-align:left">Occupation</th>
-								<th style="text-align:left" onclick="sortColumn('order')">Date</th>
-							<tr>
-						</thead>
-					<tbody id="tableData"></tbody>
-				</table>
-				</div>
-				<div class = "column"> 
-				<h3>Associated publications</h3>
-					<table>
-						<thead>
-							<tr>
-								<th style="text-align:left">Article info</th>
-								<tr><td style="text-align:left">Natunen T <i>et al.</i>, (2020). Diabetic phenotype in mouse and humans with β-amyloid pathology reduces the number of microglia around β-amyloid plaques. <a class="doi", href="https://www.biorxiv.org/content/10.1101/2020.04.07.027292v1">10.1101/2020.04.07.027292.</a> </td></tr>
-								<tr><td style="text-align:left">Gabbouj S  <i>et al.</i>, (2019). Altered Insulin Signaling in Alzheimer’s Disease Brain – Special Emphasis on PI3K-Akt Pathway. Frontiers in Neuroscience. 13. <a class="doi", href="https://www.frontiersin.org/articles/10.3389/fnins.2019.00629/full">10.3389/fnins.2019.00629.</a> </td></tr>
-								<tr><td style="text-align:left">Gabbouj S <i>et al.</i>, (2019). Intranasal insulin activates Akt2 signaling pathway in the hippocampus of wild-type but not in APP/PS1 Alzheimer model mice. Neurobiology of Aging. 75. <a class="doi", href="https://www.sciencedirect.com/science/article/pii/S0197458018304093?via%3Dihub">10.1016/j.neurobiolaging.2018.11.008.</a> </td></tr>
-							<tr>
-					</thead>
-					<tbody id="tableData"></tbody>
-					</table>
-				</div>
-			</div>
-				<div class = "plotti">
-					<div id="plottini" class="plottini">
-						<script>Plotly.newPlot('plottini', data, layout);</script>
-					</div>
-				</div>
-				<div style="color:white; text-align:right">Check this project by a few friends of mine: doomworld.com/forum/topic/107913-germs-update-1342020/</div>
-			<div class="row">
-				<div class = "recommendations">
-				<h3>Recommendations</h3>
-					<div class="bPoints" style="vertical-align:middle;">
-						<ul>
-						  <li class="up">Mikko Hiltunen</li>
-						  <li class="sub1">Professor of Tissue and Cell Biology</li>
-						  <li class="sub1">Institute of Biomedicine</li>
-						  <li class="sub1">University of Eastern Finland</li>
-						  <li class="sub1">P.O. Box 1627, FI-70211, Kuopio, Finland</li>
-						  <li class="sub1">Tel: +358-40-355 2014; E-mail: mikko.hiltunen@uef.fi</li>
-						</ul>
-					</div> 	
-				</div>
-				<img title="Click me to add fresh medium!" class="pipetti" src="https://svgsilh.com/svg/147983.svg" onclick="changeImg()">
-				<img title="We are hungry!" id="cells" src="https://ya-webdesign.com/transparent250_/cell-clipart-cell-culture-4.png">
-				
-		</div>
-	</div>
-	<div style="text-align:center">
-		<div class="link" style="text-align:center">
-			<a href="koodikoira.github.io"><b><big>Back to main page</big></b></a>
-		</div>
-	</div>
+        
+        <table style="float: center;">
+            <thead>
+              <tr>
+                <th style="text-align:left">Occupation</th>
+                <th style="text-align:left" onclick="sortColumn('order')">Date</th>
+              <tr>
+            </thead>
+          <tbody id="tableData"></tbody>
+        </table>
+        </div>
+        <div class = "column3"> 
+        <h3>Associated publications</h3>
+          <table>
+            <thead>
+              <tr>
+                <th style="text-align:left">Article info</th>
+                <tr><td style="text-align:left">Natunen T <i>et al.</i>, (2020). Diabetic phenotype in mouse and humans with β-amyloid pathology reduces the number of microglia around β-amyloid plaques. <a class="doi", href="https://www.biorxiv.org/content/10.1101/2020.04.07.027292v1">10.1101/2020.04.07.027292.</a> </td></tr>
+                <tr><td style="text-align:left">Gabbouj S  <i>et al.</i>, (2019). Altered Insulin Signaling in Alzheimer’s Disease Brain – Special Emphasis on PI3K-Akt Pathway. Frontiers in Neuroscience. 13. <a class="doi", href="https://www.frontiersin.org/articles/10.3389/fnins.2019.00629/full">10.3389/fnins.2019.00629.</a> </td></tr>
+                <tr><td style="text-align:left">Gabbouj S <i>et al.</i>, (2019). Intranasal insulin activates Akt2 signaling pathway in the hippocampus of wild-type but not in APP/PS1 Alzheimer model mice. Neurobiology of Aging. 75. <a class="doi", href="https://www.sciencedirect.com/science/article/pii/S0197458018304093?via%3Dihub">10.1016/j.neurobiolaging.2018.11.008.</a> </td></tr>
+              <tr>
+          </thead>
+          <tbody id="tableData"></tbody>
+          </table>
+        </div>
+      </div>
+        <div class = "plotti">
+          <div id="plottini" class="plottini">
+            <script>Plotly.newPlot('plottini', data, layout);</script>
+          </div>
+        </div>
+        <div style="color:white; text-align:right">Check this project by a few friends of mine: doomworld.com/forum/topic/107913-germs-update-1342020/</div>
+      <div class="row">
+        <div class = "recommendations">
+        <h3>Recommendations</h3>
+          <div class="bPoints" style="vertical-align:middle;">
+            <ul>
+              <li class="up">Mikko Hiltunen</li>
+              <li class="sub1">Professor of Tissue and Cell Biology</li>
+              <li class="sub1">Institute of Biomedicine</li>
+              <li class="sub1">University of Eastern Finland</li>
+              <li class="sub1">P.O. Box 1627, FI-70211, Kuopio, Finland</li>
+              <li class="sub1">Tel: +358-40-355 2014; E-mail: mikko.hiltunen@uef.fi</li>
+            </ul>
+          </div>  
+        </div>
+        <img title="Click me to add fresh medium!" class="pipetti" src="https://svgsilh.com/svg/147983.svg" onclick="changeImg()">
+        <img title="We are hungry!" id="cells" src="https://ya-webdesign.com/transparent250_/cell-clipart-cell-culture-4.png">
+        
+    </div>
+  </div>
+  <div style="text-align:center">
+    <div class="link" style="text-align:center">
+      <a href="koodikoira.github.io"><b><big>Back to main page</big></b></a>
+    </div>
+  </div>
 </div>
 
 <br>
