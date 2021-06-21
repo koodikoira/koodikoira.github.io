@@ -456,7 +456,7 @@ resultsName &lt;- paste(expPhenocode, &quot;_VS_&quot;, outPhenocode, sep=&quot;
 dir.create(resultsName)
 setwd(resultsName)</code></pre>
 <p>
-And lastly, we will set exposure variant p-value filtering as 5*10^-8, linkage disequilibrium (LD) clumping as 0.001, and pruning method parameter as 2. When pruning method set to 1, the duplicate summary sets are first dropped on the basis of the outcome sample size (smaller duplicates dropped).
+And lastly, we will set exposure variant p-value filtering as 5*10^-8, linkage disequilibrium (LD) clumping as 0.001, and pruning method parameter as 1. When pruning method set to 1, the duplicate summary sets are first dropped on the basis of the outcome sample size (smaller duplicates dropped).
 </p>
 <p>
 If you are using power.prune function, when method is set to 2, duplicates are dropped on the basis of instrument strength (amount of variation explained in the exposure by the instrumental variables) and sample size, and assumes that the genetic variant-exposure effects correspond to a continuous trait with a normal distribution. However, in this study power pruning had no effect in the total number of genetic variants, so it was omitted.
