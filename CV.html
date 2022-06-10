@@ -10782,7 +10782,7 @@ li.sub2 {
   padding: 5px;
   background-color: #f9f9f9;
   border-style: outset;
-  min-height: 370px;
+  min-height: 275px;
   padding-bottom: 15px;
 }
 
@@ -10991,17 +10991,12 @@ h3 {
   <script>
   let sortDirection = false;
   let workData = [
-	{place: '<br><img class="logo" src="https://ita-suomenbiopankki.fi/wp-content/themes/biopankki/img/biopankki-logo-x2.png"><img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg">', occupation: 'Data analyst/Designer', date: '1.1.2022-31.12.2022', order: 11},
-    {place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg">', occupation: 'Data analyst', date: '1.5.2021-31.12.2021', order: 10},
-    {place: '<img class="logo" src="https://ita-suomenbiopankki.fi/wp-content/themes/biopankki/img/biopankki-logo-x2.png">', occupation: 'Research assistant', date: '1.5.2019 – 31.8.2020', order: 9},
-    {place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg">', occupation: 'Research apprentice', date: '15.5. – 5.10.2018', order: 8},
-    {place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg">', occupation: 'Part time lab teacher', date: '3.2 – 12.2.2018', order: 7},
-    {place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg">', occupation: 'Part time lab teacher', date: '12.10. – 20.10.2017', order: 6},
-    {place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Sealing machine operator', date: '29.5. – 18.8.2017', order: 5},
-    {place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Packaging and processing', date: '12.7. – 26.8.2016', order: 4},
-    {place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Packaging and processing', date: '28.5. – 30.9.2015', order: 3},
-    {place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Assembler', date: '1.05. – 31.8.2013', order: 2},
-    {place: '<img class="logo" src="https://raw.githubusercontent.com/koodikoira/CV/master/ounevaLogo.png">', occupation: 'Packaging', date: '19.6. – 27.7.2012', order: 1}
+    {place: '<img class="logo" src="https://ita-suomenbiopankki.fi/wp-content/themes/biopankki/img/biopankki-logo-x2.png"><ul style="color: black;text-align:left"><li>Clinical data collection</li><li style="padding-top:3pt">Natural language processing solution development</li><li style="padding-top:3pt">Genotype data collection</li><li style="padding-top:3pt">Machine learning solution development</li></ul>', occupation: 'Data analyst', date: '1.1.2022-', order: 6},
+    {place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg"><ul style="color: black;text-align:left"><li>Data harmonisation</li><li style="padding-top:3pt">Research infrastructure development coordination</li></ul>', occupation: 'Data analyst', date: '1.5.2021-', order: 5},
+    {place: '<img class="logo" src="https://ita-suomenbiopankki.fi/wp-content/themes/biopankki/img/biopankki-logo-x2.png"><ul style="color: black;text-align:left"><li>Clinical data collection</li><li style="padding-top:3pt">Natural language processing solution development</li><li style="padding-top:3pt">Machine learning solution development</li></ul>', occupation: 'Research assistant', date: '1.5.2019 – 31.8.2020', order: 4},
+    {place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg"><ul style="color: black;text-align:left"><li>Wet lab work</li><li style="padding-top:3pt">Statistical analysis of research data</li></ul>', occupation: 'Research apprentice', date: '15.5. – 5.10.2018', order: 3},
+    {place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg"><ul style="color: black;text-align:left"><li>Instructing students in their laboratory exercises</li></ul>', occupation: 'Part time lab teacher', date: '3.2 – 12.2.2018', order: 2},
+    {place: '<img class="logo" src="https://pbs.twimg.com/profile_images/1037284955599118336/0X6iQZZD_400x400.jpg"><ul style="color: black;text-align:left"><li>Instructing students in their laboratory exercises</li></ul>', occupation: 'Part time lab teacher', date: '12.10. – 20.10.2017', order: 1}
   ];
   
   window.onload  = () => {
@@ -11042,8 +11037,8 @@ h3 {
 
   var data = [{
     type: 'bar',
-    x: [1, 2, 2, 3, 3, 4, 5, 5],
-    y: ['JavaScript ', 'C# ', 'CSS ','Bash ', 'ACS ', 'R ','SQL ', 'Python '],
+    x: [1, 2, 2, 3, 4, 4, 5, 5],
+    y: ['JavaScript ', 'C# ', 'CSS ', 'ACS ','Shell script ', 'R ','SQL ', 'Python '],
     orientation: 'h'
   }];
   
@@ -11120,7 +11115,7 @@ h3 {
 </div>
 
   <div class="inner_cell">
-  <div class="creationDate" style="text-align: right; color:Gray"> 1.1.2022 </div>
+  <div class="creationDate" style="text-align: right; color:Gray"> 10.6.2022 </div>
     <div class="text_cell_render border-box-sizing rendered_html">
       <div id="HASH" class="blue-msg">
         <span id="time-HASH" class="smalltext"><h2>Simo Ryhänen</h2></span>
@@ -11133,7 +11128,7 @@ h3 {
         <h3 class="header">Bio</h3>
         <p style="text-align:justify; margin-left:15px; margin-right:15px;">MSc in biomedicine with extensive experience in data analysis, scripting, SQL, clinical data, and project development.</p> 
           <p style="text-align:justify; margin-left:15px; margin-right:15px;">From initial research work experience at <a href="https://www3.uef.fi/en/web/biomedicine/mikko-hiltunen-group">Hiltunen research group</a>, I've progressed to <a href="https://ita-suomenbiopankki.fi/ajankohtaista/paiva-tutkimusapulaisena-ita-suomen-biopankin-itssa/">developing solutions for natural language processing</a>.
-          Recently, I've been involved in <a href="https://www.uef.fi/fi/artikkeli/pohjois-savon-ai-hub-hanke-kehittaa-tekoalypohjaisia-ratkaisuja-sote-tiedon-kasittelyyn-ja">AI Hub project</a>, and currently I'm working as a designer at UEF and as a data analyst at Biobank of Eastern Finland.</p> 
+          Recently, I've been involved in <a href="https://www.uef.fi/fi/artikkeli/pohjois-savon-ai-hub-hanke-kehittaa-tekoalypohjaisia-ratkaisuja-sote-tiedon-kasittelyyn-ja">AI Hub project</a>, and currently I'm working as a data analyst at University of Eastern Finland and Biobank of Eastern Finland.</p> 
           <p style="text-align:justify; margin-left:15px; margin-right:15px;">In my past and current jobs, I've gathered experience both in independent and collaborative work, emphasized on communication, solution seeking and solution creation skills.</p>
           </div>
         <div class="column1" style="text-align:center">
@@ -11148,47 +11143,7 @@ h3 {
         </div>
       </div>
       
-      <div class = "row"> 
-        <div class = "column2">
-          <h3>Skills</h3>
-          <div class="bPoints">
-            <ul>
-              <li class="up">Scripting & Coding</li>
-              <li class="sub1">Python</li>
-			  <li class="sub2">Data description & visualization</li>
-              <li class="sub2">Data wrangling</li>
-			  <li class="sub2">Machine learning</li>
-              <li class="sub1">R</li>
-              <li class="sub2">Data description & visualization</li>
-              <li class="sub2">Data wrangling</li>
-			  <li class="sub2">ETL</li>
-			  <li class="sub2">Mendelian randomization</li>
-              <li class="up">Familiar with wet lab work</li>
-              <li class="up">Work experience in multinational working environments</li>
-              <li class="up">Fluent in verbal and written English</li>
-            </ul>
-          </div>
-        </div>
-        <div class = "column2">
-          <h3>Hobbies</h3>
-          <div class="bPoints">
-            <ul>
-              <li class="up">Powerlifting</li>
-              <li class="sub1">Coaching</li>
-              <li class="up">Weightlifting</li>
-              <li class="up">Wall climbing & Rock climbing</li>
-              <li class="up">Tabletop tennis</li>
-              <li class="up">Game design</li>
-              <li class="sub1">Mapping & scripting</li>
-              <li class="up">History</li>
-              <li class="up">Programming</li>
-              <li class="sub1">Visualizing epidemiological data</li>
-            </ul>
-          </div>
-        </div>  
-      </div>
-        
-      <div class = "row"> 
+	  <div class = "row"> 
         <div class = "column3"> 
         <h3>Job history<small>   Hover over to see where I used to work</small></h3>
 
@@ -11218,12 +11173,57 @@ h3 {
           </table>
         </div>
       </div>
+	  
+      <div class = "row"> 
+        <div class = "column2">
+          <h3>Skills</h3>
+          <div class="bPoints">
+            <ul>
+              <li class="up">Scripting & Coding</li>
+              <li class="sub1">Python</li>
+			  <li class="sub2">Data description & visualization</li>
+              <li class="sub2">Data wrangling</li>
+			  <li class="sub2">Machine learning</li>
+              <li class="sub1">R</li>
+              <li class="sub2">Data description & visualization</li>
+              <li class="sub2">Data wrangling</li>
+			  <li class="sub2">ETL</li>
+			  <li class="sub2">Mendelian randomization</li>
+			  <li class="sub1">Shell script</li>
+			  <li class="sub2">bcftools</li>
+              <li class="up">Work experience in international working environments</li>
+              <li class="up">Fluent in verbal and written English</li>
+            </ul>
+          </div>
+        </div>
+        <div class = "column2">
+          <h3>Hobbies</h3>
+          <div class="bPoints">
+            <ul>
+              <li class="up">Powerlifting</li>
+              <li class="sub1">Coaching</li>
+              <li class="up">Weightlifting</li>
+              <li class="up">Wall climbing & Rock climbing</li>
+              <li class="up">Tabletop tennis</li>
+              <li class="up">Game design</li>
+              <li class="sub1"><a href="https://doomworld.com/forum/topic/107913-germs-update-1342020/">Mapping & scripting</a></li>
+              <li class="up">History</li>
+              <li class="up">Programming</li>
+              <li class="sub1">Visualizing epidemiological data</li>
+            </ul>
+          </div>
+        </div>  
+      </div>
+        
+      
         <div class = "plotti">
           <div style="position:relative;" id="plottini" class="plottini">
             <script>Plotly.newPlot('plottini', data, layout);</script>
           </div>
         </div>
-        <div style="color:white; text-align:right">Check this project by a few friends of mine: doomworld.com/forum/topic/107913-germs-update-1342020/</div>
+		
+		<div style="color:white">_</div>
+		
      <div class="row">
 	<div class="column4">
 			<img title="We are hungry!" id="cells" src="https://raw.githubusercontent.com/koodikoira/koodikoira.github.io/master/maljat/Picture1.png">
